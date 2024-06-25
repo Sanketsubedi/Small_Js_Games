@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket-24</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="game-on flex flex-col justify-center item-center p-10">
+        <div class="text-details flex justify-center">
+            <p class="font-bold text-2xl text-center"> Cricket-24</p>
+        </div>
+        <div class="btn-collections mt-10 flex flex-col justify-center p-10 bg-gray-100 rounded-xl shadow-xl">
+            <div class="top flex space-x-10 justify-center p-10 ">
+                <button type="submit" class=" run-button bg-blue-500 text-white font-semibold text-xl py-5 px-10"
+                    onclick="run_one()">1</button>
+                <button type="submit" class=" run-button bg-blue-500 text-white font-semibold text-xl py-5 px-10"
+                    onclick="run_two()">2</button>
+                <button type="submit" class=" run-button bg-blue-500 text-white font-semibold  text-xl py-5 px-10"
+                    onclick="run_three()">3</button>
+                <button type="submit" class=" run-button bg-blue-500 text-white font-semibold text-xl py-5 px-10"
+                    onclick="run_four()">4</button>
+                <button type="submit" class=" run-button bg-blue-500 text-white font-semibold text-xl py-5 px-10"
+                    onclick="run_six()">6</button>
+                <button type="submit" class=" run-button bg-blue-500 text-white font-semibold text-xl py-5 px-10"
+                    onclick="wicket()">W</button>
+                <button type="submit" class=" run-button bg-blue-500 text-white font-semibold  text-xl py-5 px-10"
+                    onclick="dot()">Dot </button>
+                <button type="submit" class=" run-button bg-blue-500 text-white font-semibold text-xl py-5 px-10"
+                    onclick="wide()">Wide</button>
+                <button type="submit" class=" run-button bg-blue-500 text-white font-semibold  text-xl py-5 px-10"
+                    onclick="no_ball()">No-ball</button>
+            </div>
+            <div class="botton flex flex-col text-center text-xl my-6 font-bold justify-center" id="scores_div">
+            </div>
+            <div class="botton flex flex-col text-center text-2xl font-bold justify-center" id="scoreCard">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="cricket_game.js"></script>
+
+</html>
