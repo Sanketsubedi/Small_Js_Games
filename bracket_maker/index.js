@@ -1,11 +1,11 @@
 let value;
 const inputValues = {};
-
 function getInputValue() {
-    var inputField = document.getElementById("myInput");
-    var inputValue = inputField.value; 
-    return inputValue;
+    const inputField = document.getElementById("myInput");
+    value = inputField.value;
+    console.log(value);
 }
+
 function duplicateDiv() {
     const teamname_block = document.getElementById("input-teamname");
     const repeat_block = document.getElementById("team-repeat");
