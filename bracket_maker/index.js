@@ -46,10 +46,10 @@ function duplicateDiv() {
     const repeat_block = document.getElementById("team-repeat");
 
     // Check if `value` is defined and greater than 1
-    if (!value || value <= 1) {
-        console.error("Value must be defined and greater than 1");
-        return;
-    }
+    // if (!value || value <= 1) {
+    //     console.error("Value must be defined and greater than 1");
+    //     return;
+    // }
 
     for (let i = 1; i < value; i++) {
         const clone = repeat_block.cloneNode(true);
